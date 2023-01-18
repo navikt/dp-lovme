@@ -28,5 +28,5 @@ java {
 }
 
 application {
-    mainClass.set("no.nav.dagpenger.herald.MainKt")
+    mainClass.set("no.nav.dagpenger.lovme.MainKt")
 }
