@@ -14,7 +14,7 @@ internal class KafkaTopic<K, V> private constructor(
     private val topic: String
 ) : Topic<K, V> {
     companion object {
-        private val logger = KotlinLogging.logger {}
+        private val sikkerlogg = KotlinLogging.logger("tjenestekall.KafkaTopic")
 
         fun jsonTopic(producer: KafkaProducer<String, String>, topic: String) =
             KafkaTopic(producer, topic)
@@ -22,6 +22,6 @@ internal class KafkaTopic<K, V> private constructor(
 
     override fun publiser(nøkkel: K, melding: V) {
         producer.send(ProducerRecord(topic, nøkkel, melding))
-            .also { logger.info { "Sender ut $melding" } }
+            .also { sikkerlogg.info { "Sender ut $melding" } }
     }
 }
