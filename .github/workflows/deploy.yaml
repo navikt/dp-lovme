@@ -52,7 +52,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        env: [ dev ]
+        env: [ dev, prod ]
     steps:
       - uses: actions/checkout@v3
       - uses: nais/deploy/actions/deploy@v1
