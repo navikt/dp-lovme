@@ -1,5 +1,5 @@
-# dp-herald
+# dp-lovm
 
-Denne appen sprer data ut til andre team.
+Denne appen forteller LovMe om ting.
 
 Den lytter på rapiden `teamdagpenger.rapid.v1` og kan sendere videre alt som skjer der.
