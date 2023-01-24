@@ -1,4 +1,4 @@
-# dp-lovm
+# dp-lovme
 
 Denne appen forteller LovMe om ting.
 
